@@ -1,0 +1,6 @@
+{
+  "pmid": "40835891",
+  "title": "Single-cell DNA methylome and 3D genome atlas of human subcutaneous adipose tissue.",
+  "abstract": "The cell-type-level epigenomic landscape of human subcutaneous adipose tissue (SAT) is not well characterized. Here, we elucidate the epigenomic landscape across SAT cell types using snm3C-seq. We find that SAT CG methylation (mCG) displays pronounced hypermethylation in myeloid cells and hypomethylation in adipocytes and adipose stem and progenitor cells, driving nearly half of the 705,063 differentially methylated regions (DMRs). Moreover, TET1 and DNMT3A are identified as plausible regulators of the cell-type-level mCG profiles. Both global mCG profiles and chromosomal compartmentalization reflect SAT cell-type lineage. Notably, adipocytes display more short-range chromosomal interactions, forming complex local 3D genomic structures that regulate transcriptional functions, including adipogenesis. Furthermore, adipocyte DMRs and A compartments are enriched for abdominal obesity genome-wide association study (GWAS) variants and polygenic risk, while myeloid A compartments are enriched for inflammation. Together, we characterize the SAT single-cell-level epigenomic landscape and link GWAS variants and partitioned polygenic risk of abdominal obesity and inflammation to the SAT epigenome.",
+  "journal": "Nature genetics"
+}

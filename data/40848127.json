@@ -1,0 +1,6 @@
+{
+  "pmid": "40848127",
+  "title": "An AND-gate DNA walker sensing microRNA and flap endonuclease 1.",
+  "abstract": "Precise and sensitive detection of cancer biomarkers is essential for early diagnosis and effective treatment. However, most existing sensing strategies rely on single targets, which may lack the specificity required for accurate disease diagnosis. To address this limitation, we propose an AND-gate logic DNA walker capable of simultaneously detecting two distinct types of biomarkers: miRNA-21 and flap endonuclease 1 (FEN1). This DNA walker employs a capture strand immobilized on AuNPs to bind miRNA-21, which then hybridizes with a fluorescent-tagged track strand to form a structure recognizable by FEN1. Upon FEN1 cleavage, fluorescence signals are released, enabling highly sensitive detection. The detection limits were 23.3 pM for miRNA-21 and 0.097 pg/μL for FEN1. The DNA walker demonstrates exceptional performance in intracellular in situ imaging of these biomarkers, offering a powerful tool for cancer diagnosis and investigation of disease mechanisms. This AND-gate DNA walker serves as a model for constructing multi-target detection systems with high specificity and sensitivity.",
+  "journal": "Mikrochimica acta"
+}

@@ -1,0 +1,6 @@
+{
+  "pmid": "40845842",
+  "title": "Transcription factor BACH2 shapes tissue-resident memory T cell programs to promote HIV-1 persistence.",
+  "abstract": "Tissue-resident memory T cells (Trms) are essential for mucosal immunity. We postulated that their long-lived tissue residency and restricted effector function promoted HIV-1 persistence in the gut. We coupled single-cell DOGMA-seq and TREK-seq to capture chromatin accessibility, transcriptome, surface proteins, T cell receptors (TCRs), HIV-1 DNA, and HIV-1 RNA in gut CD4<sup>+</sup> and CD8<sup>+</sup> T cells from ten aviremic HIV-1<sup>+</sup> individuals and five HIV<sup>-</sup> donors. BACH2, a transcriptional repressor that establishes long-lived memory in T cells, was a key transcription factor that shaped gut Trms into long-lived memory and restrained interferon-driven effector function. BACH2-ablation shifted long-lived central memory T cells to effector memory. HIV-1-infected cells were predominantly identified among BACH2<sup>high</sup> Trms, and HIV-1 preferentially infected and persisted in gut Trms in vitro. HIV-1-specific CD8<sup>+</sup> T cells exhibited tissue residency and epigenetic scars of exhaustion, contributing to HIV-1 immune evasion in the gut. Overall, our findings indicate that HIV-1 persists in BACH2-shaped long-lived Trms.",
+  "journal": "Immunity"
+}

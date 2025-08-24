@@ -1,0 +1,6 @@
+{
+  "pmid": "40845838",
+  "title": "Glycan shielding enables TCR-sufficient allogeneic CAR-T therapy.",
+  "abstract": "Despite the success of autologous chimeric antigen receptor (CAR)-T cell therapy, achieving persistence and avoiding rejection in allogeneic settings remains challenging. We showed that signal peptide peptidase-like 3 (SPPL3) deletion enabled glycan-mediated immune evasion in primary T cells. SPPL3 deletion modified glycan profiles on T cells, restricted ligand accessibility, and reduced allogeneic immunity without compromising the functionality of anti-CD19 CAR molecules. In a phase I clinical trial, SPPL3-null, T cell receptor (TCR)-deficient anti-CD19 allogeneic CAR-T cells reached the safety primary endpoint, with grade 3 or higher cytokine release syndrome (CRS) observed in 3 out of 9 patients with relapsed/refractory B cell non-Hodgkin lymphoma (B-NHL) (ClinicalTrials.gov: NCT06014073). Reverse translational research highlighted the pivotal role of TCR in sustaining T cell persistence. We therefore evaluated the safety of SPPL3-null, TCR-sufficient CAR-T therapy on three patients with lymphoma or leukemia for compassionate care and observed no clinical signs of graft-versus-host disease. Our findings suggest glycan shielding by SPPL3 deletion is a promising direction for optimizing universal CAR-T therapies.",
+  "journal": "Cell"
+}

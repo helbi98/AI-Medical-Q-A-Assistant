@@ -1,0 +1,6 @@
+{
+  "pmid": "40846840",
+  "title": "Unraveling morphological brain network disparities Parkinsonian tremor from essential tremor: an artificial intelligence approach for clinical differentiation.",
+  "abstract": "Tremor-dominant Parkinson's disease (TD) and Essential Tremor (ET) are the two most common types of tremors, posing huge challenges in diagnosis. This study was to investigate the pathogenesis of tremors using brain morphology and employ artificial intelligence techniques for distinguishing them. The cortical thickness differences in TD were primarily centered on the right precuneus, while in ET were mainly observed in the right medial orbitofrontal cortex. Subcortical analysis revealed that TD patients primarily exhibited an increase in pallidum, whereas ET patients showed a significant reduction in thalamus. Causal network analysis indicated that in TD, the right temporal lobe exhibited the highest out-degree, and gradually extended to motor control regions. In contrast, ET primarily exhibits initial changes in the prefrontal and occipital visual cortices. Finally, by incorporating these specific characteristics, we developed a machine learning model capable of accurately distinguishing between different tremor types, providing valuable insights for clinical practice.",
+  "journal": "NPJ Parkinson's disease"
+}

@@ -1,0 +1,20 @@
+COPD
+COVID-19
+Diabetes
+Hypertension
+Asthma
+Heart disease
+Alzheimer
+Parkinson
+Stroke
+Tuberculosis
+Pneumonia
+Cancer
+Breast cancer
+Lung cancer
+Colorectal cancer
+Leukemia
+Melanoma
+Kidney disease
+Liver disease
+HIV

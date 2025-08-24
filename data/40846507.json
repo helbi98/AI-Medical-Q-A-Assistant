@@ -1,0 +1,6 @@
+{
+  "pmid": "40846507",
+  "title": "Development and validation of a predictive model for new HIV infection screening among persons 15 years and above in primary healthcare settings in Kenya: a study protocol.",
+  "abstract": "This study seeks to determine incidence, comorbidities and drivers for new HIV infections to develop, test and validate a risk prediction model for screening for new cases of HIV.\nThe study has two components: a cross-sectional study to develop the prediction model using the HIV dataset from the Kenya AIDS and STI Control Programme and a 15-month prospective study for the validation of the model. Inferential analysis will be conducted using algorithms that perform best in disease prediction: Extreme Gradient Boosting (XGBoost) and Multilayer Perceptron. Model sensitivity and specificity will be examined using the receiver operating characteristic curve, and performance will be evaluated using metrics: accuracy, precision, recall and F1 score.\nThe study obtained ethical approval (JKU/ISERC/02321/1421) from the Jomo Kenyatta University of Agriculture and Technology Ethical and Research Board and a research licence (NACOSTI/P/24/414749) from the National Commission for Science, Technology and Innovation.",
+  "journal": "BMJ health & care informatics"
+}

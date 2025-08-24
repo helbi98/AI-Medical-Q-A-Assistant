@@ -1,0 +1,6 @@
+{
+  "pmid": "40846860",
+  "title": "Chemically modified tRNA enhances the translation capacity of mRNA rich in cognate codons.",
+  "abstract": "Although messenger RNA (mRNA) vaccines have been employed to prevent the spread of COVID-19, they are still limited by instability and low translation capacity. Alterations in tRNA abundance and modification, linking codon optimality, impact mRNA stability and protein output in a codon-dependent manner, suggesting tRNA as a potential translation enhancer. Here, we report a strategy named tRNA-plus to augment translation via artificially modulating tRNA availability. Overexpression of specific tRNAs enhances the stability and translation efficiency of SARS-CoV-2 Spike mRNA, boosting protein levels up to 4.7-fold. Additionally, chemically synthesized tRNAs bearing multiple site-specific modifications, particularly at the anticodon-loop and TΨC-loop, exhibit on average ~4-fold higher decoding efficacy than unmodified tRNAs, along with increased stability and reduced immunotoxicity. Furthermore, codelivery of Spike mRNA vaccine and tRNA through lipid nanoparticles elicits augmented humoral and cellular immune responses in vivo. These results presented here provide a general approach to elevate mRNA translation potency, with applications in diverse translation-based fields.",
+  "journal": "Nature communications"
+}

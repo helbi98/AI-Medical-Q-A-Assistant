@@ -1,0 +1,6 @@
+{
+  "pmid": "40847928",
+  "title": "Machine Learning-Assisted Real-Time Inflammation Monitoring and Optimal Treatment of Diabetic Wounds Based on a Ratiometric Fluorescent Sensing Peptide Hydrogel.",
+  "abstract": "Managing inflammation in diabetic chronic wounds remains a major clinical challenge, primarily due to the lack of real-time monitoring techniques. To address this issue, we developed a peptide hydrogel capable of simultaneously monitoring the inflammation status and promoting healing. The hydrogel was formed by coassembling polyglutamic acid with polylysine that was premodified with coumarin 7 (an ACQ fluorophore) and tetraphenylethene (an AIE fluorophore). In the inflammatory microenvironment, released fluorophores undergo colorimetric changes that enable semiquantitative detection of reactive oxygen species (ROS). Leveraging this response, we imaged 1500 wound areas from mouse skin samples exhibiting varying ROS concentrations to create a training data set for the K-Nearest Neighbors (KNN) model, which allows real-time calculation of <i>in situ</i> ROS levels. Crucially, treatment strategies were dynamically adjusted based on such calculated ROS levels. Collectively, this system represents a promising approach for real-time inflammation monitoring and toward closed-loop therapy.",
+  "journal": "Nano letters"
+}

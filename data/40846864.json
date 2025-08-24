@@ -1,0 +1,6 @@
+{
+  "pmid": "40846864",
+  "title": "Engineering kidney developmental trajectory using culture boundary conditions.",
+  "abstract": "Kidney explants are traditionally cultured at air-liquid interfaces, which disrupts 3D tissue structure and limits interpretation of developmental data. Here we develop a 3D culture technique using hydrogel embedding to capture kidney morphogenesis in real time. 3D culture better approximates in vivo-like niche spacing and tubule dynamics, as well as branching defects under control conditions and GDNF-RET signaling perturbations. To isolate the effect of material properties on explant development, we apply acrylated hyaluronic acid hydrogels that allow independent tuning of stiffness and adhesion. We find that sufficient stiffness and adhesive ligands are both required to maintain kidney shape. More adhesive hydrogels increase nephrons per ureteric bud (UB) tip while matrix stiffness has a \"Goldilocks effect\" centered at ~2 kPa. Our technique captures large-scale, in vivo-like tissue morphogenesis in 3D, improving insight into congenital disease phenotypes. Moreover, understanding the impact of boundary condition mechanics on kidney development benefits fundamental research and renal engineering.",
+  "journal": "Nature communications"
+}

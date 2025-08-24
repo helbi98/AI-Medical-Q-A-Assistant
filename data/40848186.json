@@ -1,0 +1,6 @@
+{
+  "pmid": "40848186",
+  "title": "Investigation into the Classification of Cough Sounds for Early Asthma Screening.",
+  "abstract": "This review aims to explore an effective and scalable approach for early asthma detection using cough sounds. The main objective is to evaluate whether a multi-model deep learning fusion framework can improve diagnostic accuracy and generalizability in real-world settings.\nRecent research in respiratory sound analysis has demonstrated the potential of deep learning models in detecting pulmonary diseases. However, most studies focus on single-network architectures and often overlook class imbalance and training stability, which can limit model performance in practical applications. This study presents an asthma detection model that integrates ResNet18, VGG16, and DenseNet121 through a fusion layer. SMOTE is used to address data imbalance, and a weighted cross-entropy loss enhances training robustness. Mixed precision training and StepLR scheduling further improve performance. The proposed model achieved 95.9% accuracy on the test set, demonstrating strong generalization and potential for real-time, non-invasive screening in clinical environments.",
+  "journal": "Current allergy and asthma reports"
+}

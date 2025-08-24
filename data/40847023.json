@@ -1,0 +1,6 @@
+{
+  "pmid": "40847023",
+  "title": "GraphVelo allows for accurate inference of multimodal velocities and molecular mechanisms for single cells.",
+  "abstract": "RNA velocities and generalizations emerge as powerful approaches for extracting time-resolved information from high-throughput snapshot single-cell data. Yet, several inherent limitations restrict applying the approaches to genes not suitable for RNA velocity inference due to complex transcriptional dynamics, low expression, or lacking splicing dynamics, or data of non-transcriptomic modality. Here, we present GraphVelo, a graph-based machine learning procedure that uses as input the RNA velocities inferred from existing methods and infers velocity vectors lying in the tangent space of the low-dimensional manifold formed by the single cell data. GraphVelo preserves vector magnitude and direction information during transformations across different data representations. Tests on synthetic and experimental single-cell data, including viral-host interactome, multi-omics, and spatial genomics datasets demonstrate that GraphVelo, together with downstream generalized dynamo analyses, extends RNA velocities to multi-modal data and reveals quantitative nonlinear regulation relations between genes, virus, and host cells, and different layers of gene regulation.",
+  "journal": "Nature communications"
+}

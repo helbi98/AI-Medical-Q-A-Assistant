@@ -1,0 +1,6 @@
+{
+  "pmid": "40845853",
+  "title": "ApoE4 disrupts intracellular trafficking and iron homeostasis in a reproducible iPSC-based model of human brain endothelial cells.",
+  "abstract": "Transferrin receptor in brain endothelial cells can deliver therapeutic antibodies to the brain via transcytosis across the blood-brain barrier (BBB). Whether receptor transport remains intact in Alzheimer disease is still a major open question. Here, we investigated whether apolipoprotein E4 (ApoE4), the major genetic risk factor for Alzheimer disease, altered intracellular transport in human brain endothelial cells. To achieve this, we first developed a reproducible protocol for induced pluripotent stem cells based on a defined chemical cocktail and extracellular matrix support to differentiate brain endothelial cells (iCE-BECs). Multi-omics profiling and functional transport assays showed that iCE-BECs have a brain endothelial gene signature and recapitulate receptor-mediated transcytosis of a clinically validated Brainshuttle antibody against transferrin receptor. Engineered iCE-BECs homozygous for ApoE4 had impaired endosome maturation, increased transferrin receptor expression, and reduced cytoplasmic iron. Our data revealed that ApoE4 can impact intracellular transport and iron homeostasis at the BBB in a cell-autonomous manner.",
+  "journal": "Stem cell reports"
+}

@@ -1,0 +1,6 @@
+{
+  "pmid": "40843143",
+  "title": "Estimation of Covid-19 lungs damage based on computer tomography images analysis.",
+  "abstract": "Modern treatment is based on reproducible quantitative analysis of available data. The Covid-19 pandemic did accelerate development and research in several multidisciplinary areas. One of them is the use of software tools for faster and reproducible patient data evaluation. A CT scan can be invaluable for a search of details, but it is not always easy to see the big picture in 3D data. Even in the visual analysis of CT slice by slice can inter and intra variability makes a big difference. We present an ImageJ tool developed together with the radiology center of Faculty hospital Královské Vinohrady for CT evaluation of patients with COVID-19. The tool was developed to help estimate the percentage of lungs affected by the infection. The patients can be divided into five groups based on percentage score and proper treatment can be applied.",
+  "journal": "F1000Research"
+}
