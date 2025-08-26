@@ -1,0 +1,6 @@
+{
+  "pmid": "40854146",
+  "title": "Detection of human brain cancers using genomic and immune cell characterization of cerebrospinal fluid through CSF-BAM.",
+  "abstract": "Patients with radiographically detectable lesions in their brain or other symptoms compatible with brain tumors pose challenges for diagnosis. The only definitive way to diagnose such patients is through brain biopsy, an invasive and dangerous procedure. Here we present a new workflow termed \"CSF-BAM\" that simultaneously identifies B cell or T cell receptor sequences, Aneuploidy, and Mutations using amplification of both strands of the DNA from cerebrospinal fluid (CSF) samples. We applied CSF-BAM to a validation set of 209 samples from patients with brain cancers. Among the 129 samples from patients with the most common aggressive cancer types, the sensitivity of detection was 81%. None of 30 CSF-BAM assays were positive in CSF samples from patients without brain cancers (100% specificity). CSF-BAM provides an integrated approach to identify neoplasia in the central nervous system, provides information about the genetics and immune environment, and has the potential to inform patient management.",
+  "journal": "Cancer discovery"
+}

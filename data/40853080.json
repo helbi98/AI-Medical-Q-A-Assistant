@@ -1,0 +1,6 @@
+{
+  "pmid": "40853080",
+  "title": "Divergent Roles of C/EBPβ Isoforms LAP and LIP in Shaping T Cell Dysfunction and Tumor Progression in Triple-Negative Breast Cancer.",
+  "abstract": "C/EBPβ, a member of the CCAAT/enhancer-binding protein (C/EBP) family of transcription factors, is implicated in monocyte differentiation, inflammation, and cancer progression. However, the distinct roles of its transcriptional activator (LAP) and repressor (LIP) isoforms in triple-negative breast cancer (TNBC) pathogenesis remain unclear. In this study, we demonstrate that LAP critically promotes TNBC growth, whereas single-cell RNA sequencing reveals that LAP overexpression drives CD8<sup>+</sup> T cell exhaustion, whereas LIP primarily modulates CD4<sup>+</sup> T cell function. Integrative ATAC-seq, ChIP-seq, and RNA-seq analyses further show that LAP enhances chromatin accessibility and activates the EGFR signaling pathway, whereas LIP exerts minimal effects on TNBC phenotypes. These findings establish LAP as a key oncogenic driver in TNBC and unveil its immunosuppressive role in shaping the tumor microenvironment, offering potential therapeutic targets for TNBC treatment.",
+  "journal": "FASEB journal : official publication of the Federation of American Societies for Experimental Biology"
+}

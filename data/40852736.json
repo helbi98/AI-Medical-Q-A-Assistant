@@ -1,0 +1,6 @@
+{
+  "pmid": "40852736",
+  "title": "Confidence intervals for the covariate-specific overlap coefficient (OVL).",
+  "abstract": "The overlap coefficient (<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>OVL</mi></math>) quantifies the similarity between two distributions through the overlapping area of their distribution functions. It has been discussed in the literature in a variety of different contexts. One approach for testing the bioequivalence of treatments is to measure the overlap of the distributions of individual responses to therapy. In some situations, covariates can significantly influence distributional overlap. This paper develops a covariate-specific <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>OVL</mi></math> estimator using linear regression with a possible Box-Cox transformation. Bootstrap-based confidence intervals for the covariate-specific <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>OVL</mi></math> are proposed and evaluated through extensive simulations. The methodology is illustrated using fingerstick post-prandial blood glucose measurements as a biomarker for diabetes patients adjusted for age.",
+  "journal": "Journal of biopharmaceutical statistics"
+}

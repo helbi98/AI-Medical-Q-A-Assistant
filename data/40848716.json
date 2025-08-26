@@ -1,0 +1,6 @@
+{
+  "pmid": "40848716",
+  "title": "LINE-1 retrotransposons mediate cis-acting transcriptional control in human pluripotent stem cells and regulate early brain development.",
+  "abstract": "Long interspersed nuclear element 1 (L1) retrotransposons represent a vast source of genetic variability. However, mechanistic analysis of whether and how L1s contribute to human developmental programs is lacking, in part due to the challenges associated with specific profiling and manipulation of human L1 expression. Here, we show that thousands of hominoid-specific L1 integrants are expressed in human induced pluripotent stem cells and cerebral organoids. The activity levels of individual L1 promoters vary widely and correlate with an active epigenetic state. Efficient on-target CRISPR interference (CRISPRi) silencing of L1s revealed nearly a hundred co-opted L1-derived chimeric transcripts, and L1 silencing resulted in changes in neural differentiation programs and reduced cerebral organoid size. Together, these data implicate L1s and L1-derived transcripts in hominoid-specific CNS developmental processes.",
+  "journal": "Cell genomics"
+}

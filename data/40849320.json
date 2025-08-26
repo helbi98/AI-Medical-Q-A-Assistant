@@ -1,0 +1,6 @@
+{
+  "pmid": "40849320",
+  "title": "DERMA-OCTA: A Comprehensive Dataset and Preprocessing Pipeline for Dermatological OCTA Vessel Segmentation.",
+  "abstract": "Optical coherence tomography angiography (OCTA) has emerged as a promising tool for non-invasive vascular imaging in dermatology. However, the field lacks standardized methods for processing and analyzing these complex images, as well as sufficient annotated datasets for developing automated analysis tools. We present DERMA-OCTA, the first open-access dermatological OCTA dataset, comprising 330 volumetric scans from 74 subjects with various skin conditions. The dataset contains the original 2D and 3D OCTA acquisitions, as well as versions processed with five different preprocessing methods, and the reference 2D and 3D segmentations. For each version, segmentation labels are provided, generated using the U-Net architecture as 2D and 3D segmentation approaches. By providing high-resolution, annotated OCTA data across a range of skin pathologies, this dataset offers a valuable resource for training deep learning models, benchmarking segmentation algorithms, and facilitating research into non-invasive skin imaging. The DERMA-OCTA dataset is freely downloadable.",
+  "journal": "Scientific data"
+}

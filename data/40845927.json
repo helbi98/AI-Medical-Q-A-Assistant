@@ -1,0 +1,6 @@
+{
+  "pmid": "40845927",
+  "title": "Advances in the computational development of hepatitis B virus capsid assembly modulators.",
+  "abstract": "The capsid protein (Cp) of hepatitis B virus (HBV) is crucial for the nucleocapsid formation, viral DNA replication, and virus-host cell interactions necessary for HBV persistence. Capsid assembly modulators (CAMs) target Cp dimer-dimer interactions, thereby inhibiting the reverse transcription of pregenomic RNA and the synthesis of relaxed circular DNA, leading to a reduction in covalently closed circular DNA amplification. This review highlights the use of molecular docking, quantitative structure-activity relationship (QSAR), and machine learning-based QSAR models, and molecular dynamics simulations, in CAM discovery and optimization. We aim to provide strategies for CAM discovery, optimization, and clinical translation from a computer-aided drug design perspective, thereby contributing to efforts toward a functional cure for HBV.",
+  "journal": "Drug discovery today"
+}

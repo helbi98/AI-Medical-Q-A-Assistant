@@ -1,0 +1,6 @@
+{
+  "pmid": "40851034",
+  "title": "Culture-free detection of bacteria from blood for rapid sepsis diagnosis.",
+  "abstract": "Approximately 50 million people suffer from sepsis yearly, and 13 million die from it. For every hour a patient with septic shock is untreated, their survival rate decreases by 8%. Therefore, rapid detection and antibiotic susceptibility profiling of bacterial agents in the blood of sepsis patients are crucial for determining appropriate treatment. Here, we introduce a method to isolate bacteria from whole blood with high separation efficiency through Smart centrifugation, followed by microfluidic trapping and subsequent detection using deep learning applied to microscopy images. We detected, within 2 h, E. coli, K. pneumoniae, or E. faecalis from spiked samples of healthy human donor blood at clinically relevant concentrations as low as 9, 7 and 32 colony-forming units per ml of blood, respectively. However, the detection of S. aureus remains a challenge. This rapid isolation and detection represents a significant advancement towards culture-free detection of bloodstream infections.",
+  "journal": "NPJ digital medicine"
+}

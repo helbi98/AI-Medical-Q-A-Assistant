@@ -1,0 +1,6 @@
+{
+  "pmid": "40852372",
+  "title": "Post-selection inference for high-dimensional mediation analysis with survival outcomes.",
+  "abstract": "It is of substantial scientific interest to detect mediators that lie in the causal pathway from an exposure to a survival outcome. However, with high-dimensional mediators, as often encountered in modern genomic data settings, there is a lack of powerful methods that can provide valid post-selection inference for the identified marginal mediation effect. To resolve this challenge, we develop a post-selection inference procedure for the maximally selected natural indirect effect using a semiparametric efficient influence function approach. To this end, we establish the asymptotic normality of a stabilized one-step estimator that takes the selection of the mediator into account. Simulation studies show that our proposed method has good empirical performance. We further apply our proposed approach to a lung cancer dataset and find multiple DNA methylation CpG sites that might mediate the effect of cigarette smoking on lung cancer survival.",
+  "journal": "Scandinavian journal of statistics, theory and applications"
+}

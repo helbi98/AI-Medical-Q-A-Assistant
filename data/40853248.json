@@ -1,0 +1,6 @@
+{
+  "pmid": "40853248",
+  "title": "ACLY promotes NK cell effector function by regulating glycolysis and histone acetylation.",
+  "abstract": "Natural killer (NK) cells are innate immune lymphocytes important for host viral and tumor immunity. We investigated the requirement for ATP citrate lyase (ACLY) in NK cell function using an inducible genetic mouse model. ACLY regulates the citrate-malate shuttle, generating cytosolic acetyl-coenzyme A that is primarily used for acetylation or lipid synthesis. ACLY-deficient NK cells upon IL-15 activation exhibited significant defects in glycolysis, proliferation, cytokine production, and cytotoxicity, without decreased intracellular lipids. Notably, ACLY deficiency specifically resulted in reduced NK cell responses to activating receptors associated with the adapter proteins DAP10 or DAP12. This is due to decreased DAP12 and increased DAP10 transcript and protein, coupled with epigenetic profiling that demonstrated altered histone acetylation of these genes in ACLY KO. Supplementation of ACLY-deficient NK cells with acetate was sufficient to overcome most functional defects, including restoring DAP10/12 expression and activating receptor function, emphasizing the importance of ACLY-generated cytosolic acetyl-coenzyme A for NK effector functions.",
+  "journal": "Journal of immunology (Baltimore, Md. : 1950)"
+}

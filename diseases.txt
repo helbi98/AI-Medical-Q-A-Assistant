@@ -18,3 +18,5 @@ Melanoma
 Kidney disease
 Liver disease
 HIV
+Hepatitis B
+Hepatitis C

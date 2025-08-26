@@ -1,0 +1,6 @@
+{
+  "pmid": "40853989",
+  "title": "Dynamic of competitive Lotka-Volterra model for tumor-host systems under constant or periodic perturbation: Implications for the therapy of cancer.",
+  "abstract": "In this paper, the tumor-host interaction is modeled using a Lotka-Volterra framework. The critical parameters that define the possible dynamical regimes are identified through linear stability analysis. The effects of both constant and periodic perturbations are examined, along with their clinical implications. The treatment dose required to drive the system to a desired state is determined. It is also shown that aggressive tumors evolve toward a limit cycle when the host is under the action of low-frequency periodic treatment. As the frequency increases, a transition to a non-chaotic attractor occurs. This transition narrows as the frequency of the external periodic perturbation increases. No chaotic behavior is observed, even at higher values of both perturbation strength and frequency, as the maximum Lyapunov exponent remains negative. These results suggest that although aggressive tumors may not be completely eradicated by conventional anticancer therapies, they could potentially be controlled through external low-frequency periodic treatments that target directly only the host, such as immunotherapy.",
+  "journal": "PloS one"
+}

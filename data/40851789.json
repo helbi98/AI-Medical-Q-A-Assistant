@@ -1,0 +1,6 @@
+{
+  "pmid": "40851789",
+  "title": "A Neural Network Integrated Accelerated Failure Time-Based Mixture Cure Model.",
+  "abstract": "The mixture cure rate model (MCM) is commonly used for analyzing survival data with a cured subgroup. While the prevailing approach to modeling the probability of cure involves a generalized linear model using a known parametric link function, such as the logit link function, it has limitations in capturing the complex effects of covariates on cure probability. This paper introduces a novel MCM employing a neural network-based classifier for cure probability and an accelerated failure time structure for the survival distribution of uncured patients. An expectation maximization algorithm is developed for parameter estimation. Simulation results demonstrate the superior performance of the proposed model in capturing non-linear classification boundaries compared to logit-based and spline-based MCMs, as well as other machine learning algorithms. This enhances the accuracy and precision of cured probability estimates, improving predictive accuracy. The proposed model and estimation method are applied to survival data on leukemia cancer patients, showcasing their effectiveness.",
+  "journal": "Statistics and computing"
+}

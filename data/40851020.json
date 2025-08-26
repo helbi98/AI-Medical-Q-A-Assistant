@@ -1,0 +1,6 @@
+{
+  "pmid": "40851020",
+  "title": "Network toxicology reveals glyphosate mechanisms in kidney injury and cancer​​.",
+  "abstract": "Molecular mechanisms underlying glyphosate-induced nephrotoxicity and carcinogenicity were investigated through integrated network toxicology, molecular docking, and dynamics simulations. Screening identified 47 potential glyphosate targets; intersection analysis yielded 20 kidney injury and 31 kidney cancer shared targets. Protein-protein interaction networks highlighted matrix metalloproteinases (MMP9, MMP2, MMP8, MMP3) and PLG as topological hubs. Pathway enrichment revealed significant alterations in extracellular matrix reorganization and nitrogen metabolism. Molecular modeling demonstrated stable glyphosate binding within catalytic domains of MMPs (affinities: -5.03 to - 6.29 kcal/mol), with dynamics simulations confirming persistent complex formation over 100 ns. Results indicate MMP-mediated dysregulation of structural homeostasis, alongside metabolic pathway perturbation, as contributory factors in glyphosate-associated renal pathology. The prominence of MMPs across target networks and functional analyses suggests their role as molecular conduits for glyphosate toxicity.",
+  "journal": "Scientific reports"
+}

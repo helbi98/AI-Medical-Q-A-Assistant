@@ -1,0 +1,6 @@
+{
+  "pmid": "40849361",
+  "title": "CARE-AD: a multi-agent large language model framework for Alzheimer's disease prediction using longitudinal clinical notes.",
+  "abstract": "Large language models (LLMs) have shown promising capabilities across diverse domains, yet their application to complex clinical prediction tasks remains limited. In this study, we present CARE-AD (Collaborative Analysis and Risk Evaluation for Alzheimer's Disease), a multi-agent LLM-based framework for forecasting Alzheimer's disease (AD) onset by analyzing longitudinal electronic health record (EHR) notes. CARE-AD assigns specialized LLM agents to extract signs and symptoms relevant to AD and conduct domain-specific evaluations-emulating a collaborative diagnostic process. In a retrospective evaluation, CARE-AD achieved higher accuracy (0.53 vs. 0.26-0.45) than baseline single-model approaches in predicting AD risk 10 years prior to the first recorded diagnosis code. These findings highlight the feasibility of using multi-agent LLM systems to support early risk assessment for AD and motivate further research on their integration into clinical decision support workflows.",
+  "journal": "NPJ digital medicine"
+}

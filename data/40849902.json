@@ -1,0 +1,6 @@
+{
+  "pmid": "40849902",
+  "title": "Age-dependent effect of environmental enrichment on the neural 3D chromatin interactome.",
+  "abstract": "Aging is a multifactorial biological process resulting in physiological and cellular decline. However, our understanding of age-related changes in 3D genome organization and the effect of external interventions on this process remains limited. Here, we describe alterations in the landscape of the 3D chromatin interactome upon aging, utilizing the low-input promoter capture Hi-C (liCHi-C) technique with mouse hippocampal neurons. We also integrated liCHi-C data with RNA sequencing (RNA-seq) data to identify functional implications. Furthermore, we assessed the effect of exposure to environmental enrichment (EE). Remarkably, our results demonstrate an age-dependent modulation of promoter interactions and expression with EE, with aging-like changes induced in young mice upon EE, likely associated with brain maturation, while age-related alterations were reverted in old mice, leading to a partial rejuvenation of aged mouse hippocampi. These findings reveal a dynamic behavior of the neuronal 3D chromatin structure over time, which can be modulated by external interventions.",
+  "journal": "Cell reports"
+}

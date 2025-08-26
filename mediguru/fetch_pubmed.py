@@ -35,7 +35,7 @@ def fetch_record(pmid: str):
 
 # Function to fetch and save all papers for a query
 def fetch_and_save(query: str, out_dir: str = DATA_DIR, retmax: int = RETMAX):
-    print(f"[Fetching] PubMed papers for: {query}")
+    print(f"\n[Fetching] PubMed papers for: {query}")
     os.makedirs(out_dir, exist_ok=True)
     pmids = fetch_pmids(query, retmax=retmax)
 
@@ -43,22 +43,30 @@ def fetch_and_save(query: str, out_dir: str = DATA_DIR, retmax: int = RETMAX):
         print(f"[Warning] No papers found for '{query}'. Skipping.")
         return
 
+    added_count = 0
+    skipped_count = 0
+
     for pmid in pmids:
         if not pmid.strip():
             continue
 
         path = os.path.join(out_dir, f"{pmid}.json")
         if os.path.exists(path):
-            # Skip already saved JSON
+            print(f"[Skipped] Already exists: {pmid}.json")
+            skipped_count += 1
             continue
 
         try:
             rec = fetch_record(pmid)
             with open(path, "w", encoding="utf-8") as f:
                 json.dump(rec, f, ensure_ascii=False, indent=2)
+            print(f"[Added] Saved new paper: {pmid}.json")
+            added_count += 1
             time.sleep(SLEEP_TIME)  # respect NCBI rate limits
         except Exception as e:
             print(f"[Error] Failed to fetch PMID {pmid}: {e}")
+
+    print(f"[Summary] Disease '{query}': {added_count} added, {skipped_count} skipped.")
 
 # Function to fetch all diseases from a file
 def fetch_all_diseases(disease_file: str = "diseases.txt"):

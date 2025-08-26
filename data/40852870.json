@@ -1,0 +1,6 @@
+{
+  "pmid": "40852870",
+  "title": "Inhibitor-induced dimerization mediates lufotrelvir resistance in mutants of SARS-CoV-2 3C-like protease.",
+  "abstract": "The emergence of SARS-CoV-2 and other lethal coronaviruses has prompted extensive research into targeted antiviral treatments, particularly focusing on the viral 3C-like protease (3CL<sup>pro</sup>) due to its essential role for viral replication. However, the rise of drug resistance mutations poses threats to public health and underscores the need to predict resistance mutations and understand the mechanism of how these mutations confer resistance. The binding of inhibitor to 3CL<sup>pro</sup> drives it from the monomeric to the active dimeric form, which can counterintuitively lead to enzyme activation rather than inhibition. Furthermore, we find this allosteric coupling between binding and dimerization is sensitive to mutation, leading to a new mechanism for drug resistance. Understanding the relationship between inhibitor binding and dimerization is important for resistant strain surveillance and development of robust antivirals. Herein, we present a systematic study of drug resistance mediated by inhibitor-induced dimerization of 3CL<sup>pro</sup>.",
+  "journal": "Protein science : a publication of the Protein Society"
+}

@@ -1,89 +1,92 @@
-import os, pickle
+import os
+import shutil
 from typing import List, Dict
-import numpy as np
-import faiss
-from tqdm import tqdm
-from sentence_transformers import SentenceTransformer
+from langchain_community.vectorstores import Chroma
+from langchain_community.embeddings import SentenceTransformerEmbeddings
 from .preprocess import load_json_docs, iter_chunks
 
-EMB_MODEL = os.environ.get(
-    "MEDIGURU_EMB_MODEL", "sentence-transformers/all-MiniLM-L6-v2"
-)
-
-PROCESSED_FILE = "index/processed_pmids.txt"
-INDEX_DIR = "index"
-BATCH_SIZE = 32
+# ── Config ─────────────────────────────────────────────────────────────────────
+EMB_MODEL = os.environ.get("MEDIGURU_EMB_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
+CHROMA_DIR = "chroma_index"   # new persistence directory for Chroma
+COLLECTION_NAME = "mediguru"  # collection name inside Chroma
 
 
-def build_faiss_index(data_dir="data", index_dir=INDEX_DIR, batch_size=BATCH_SIZE):
-    os.makedirs(index_dir, exist_ok=True)
-    index_path = os.path.join(index_dir, "faiss.index")
-    meta_path = os.path.join(index_dir, "meta.pkl")
+def build_chroma_index(data_dir: str = "data",
+                       persist_dir: str = CHROMA_DIR,
+                       collection_name: str = COLLECTION_NAME,
+                       rebuild: bool = False) -> None:
+    """
+    Build or update a persistent ChromaDB collection from JSON docs in `data_dir`.
+
+    - If rebuild=True, deletes and rebuilds the index from scratch.
+    - If rebuild=False, performs incremental indexing:
+        * Skips chunks that already exist (same deterministic ID).
+        * Adds only new chunks from new/updated files.
+    """
+    # ── Rebuild or Incremental ────────────────────────────────────────────────
+    if rebuild and os.path.exists(persist_dir):
+        print(f"[Chroma] Removing existing directory: {persist_dir}")
+        shutil.rmtree(persist_dir)
+
+    os.makedirs(persist_dir, exist_ok=True)
 
     print(f"[Embeddings] Loading model: {EMB_MODEL}")
-    model = SentenceTransformer(EMB_MODEL)
+    embedding_model = SentenceTransformerEmbeddings(model_name=EMB_MODEL)
 
-    # Load existing FAISS index if exists
-    if os.path.exists(index_path):
-        index = faiss.read_index(index_path)
-        with open(meta_path, "rb") as f:
-            metas: List[Dict] = pickle.load(f)
-        processed_pmids = set([m["pmid"] for m in metas])
-        print(f"[Index] Loaded existing index with {len(metas)} vectors.")
-    else:
-        index = None
-        metas = []
-        processed_pmids = set()
-        print("[Index] Creating new FAISS index.")
-
-    # Load JSON docs
+    # Load source docs
     docs = load_json_docs(data_dir)
-    new_docs = [doc for doc in docs if doc["pmid"] not in processed_pmids]
-    print(f"[Embeddings] {len(new_docs)} new papers to embed.")
+    print(f"[Data] Loaded {len(docs)} papers from '{data_dir}'.")
 
-    # Convert to chunks
-    chunk_stream = list(iter_chunks(new_docs, max_words=100, overlap_sentences=1))
-    texts = [c["text"] for c in chunk_stream]
-
-    if not texts:
-        print("[Embeddings] No new chunks to embed. Exiting.")
-        return
-
-    print(f"[Embeddings] Encoding {len(texts)} chunks...")
-    embeddings = model.encode(
-        texts,
-        batch_size=batch_size,
-        show_progress_bar=True,
-        convert_to_numpy=True,
-        normalize_embeddings=True,
-    )
-
-    # Build or append FAISS index
-    dim = embeddings.shape[1]
-    if index is None:
-        index = faiss.IndexFlatIP(dim)
-
-    index.add(embeddings)
-
-    # Update metas
-    new_metas = [
-        {
-            "pmid": c["pmid"],
-            "journal": c["journal"],
-            "chunk": c["chunk"],
-            "text": c["text"],
-        }
+    # Chunking
+    chunk_stream = list(iter_chunks(docs, max_words=100, overlap_sentences=1))
+    texts: List[str] = [c["text"] for c in chunk_stream]
+    metadatas: List[Dict] = [
+        {"pmid": c["pmid"], "journal": c["journal"], "chunk": c["chunk"]}
         for c in chunk_stream
     ]
-    metas.extend(new_metas)
+    ids: List[str] = [f"{m['pmid']}:{m['chunk']}" for m in metadatas]
 
-    # Save FAISS index and meta
-    faiss.write_index(index, index_path)
-    with open(meta_path, "wb") as f:
-        pickle.dump(metas, f)
+    if not texts:
+        print("[Embeddings] No chunks to index. Exiting.")
+        return
 
-    print(f"[Index] Wrote {index_path} and {meta_path} ({len(metas)} vectors).")
+    # Open or create collection
+    vectordb = Chroma(
+        collection_name=collection_name,
+        embedding_function=embedding_model,
+        persist_directory=persist_dir,
+    )
+
+    # ── Incremental Handling ──────────────────────────────────────────────────
+    existing = vectordb.get(include=[])  # fetch only IDs
+    existing_ids = set(existing["ids"]) if existing and "ids" in existing else set()
+    print(f"[Chroma] Existing vectors in DB: {len(existing_ids)}")
+
+    # Select only new (non-duplicate) chunks
+    new_texts, new_metas, new_ids = [], [], []
+    for t, m, i in zip(texts, metadatas, ids):
+        if i not in existing_ids:
+            new_texts.append(t)
+            new_metas.append(m)
+            new_ids.append(i)
+
+    print(f"[Chroma] New chunks to add: {len(new_ids)}")
+
+    if new_texts:
+        vectordb.add_texts(texts=new_texts, metadatas=new_metas, ids=new_ids)
+        print(f"[Chroma] Added {len(new_ids)} new chunks.")
+    else:
+        print("[Chroma] No new chunks to add.")
+
+    # Persist to disk (Chroma >=0.4.x does auto-persist, but safe to call)
+    vectordb.persist()
+
+    try:
+        count = vectordb._collection.count()  # type: ignore[attr-defined]
+        print(f"[Chroma] Persisted. Total vectors in collection: {count}")
+    except Exception:
+        print("[Chroma] Persisted.")
 
 
 if __name__ == "__main__":
-    build_faiss_index()
+    build_chroma_index()
