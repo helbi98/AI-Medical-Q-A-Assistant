@@ -7,7 +7,7 @@ from .preprocess import load_json_docs, iter_chunks
 
 # ── Config ─────────────────────────────────────────────────────────────────────
 EMB_MODEL = os.environ.get("MEDIGURU_EMB_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
-CHROMA_DIR = "chroma_index"   # new persistence directory for Chroma
+CHROMA_DIR = "chroma_index"   # new directory for Chroma
 COLLECTION_NAME = "mediguru"  # collection name inside Chroma
 
 
@@ -20,8 +20,8 @@ def build_chroma_index(data_dir: str = "data",
 
     - If rebuild=True, deletes and rebuilds the index from scratch.
     - If rebuild=False, performs incremental indexing:
-        * Skips chunks that already exist (same deterministic ID).
-        * Adds only new chunks from new/updated files.
+        - Skips chunks that already exist (same deterministic ID).
+        - Adds only new chunks from new/updated files.
     """
     # ── Rebuild or Incremental ────────────────────────────────────────────────
     if rebuild and os.path.exists(persist_dir):
@@ -58,7 +58,7 @@ def build_chroma_index(data_dir: str = "data",
     )
 
     # ── Incremental Handling ──────────────────────────────────────────────────
-    existing = vectordb.get(include=[])  # fetch only IDs
+    existing = vectordb.get(include=[])
     existing_ids = set(existing["ids"]) if existing and "ids" in existing else set()
     print(f"[Chroma] Existing vectors in DB: {len(existing_ids)}")
 
@@ -78,7 +78,6 @@ def build_chroma_index(data_dir: str = "data",
     else:
         print("[Chroma] No new chunks to add.")
 
-    # Persist to disk (Chroma >=0.4.x does auto-persist, but safe to call)
     vectordb.persist()
 
     try:

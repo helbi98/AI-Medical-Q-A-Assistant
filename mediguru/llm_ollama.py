@@ -9,7 +9,7 @@ SYSTEM_INSTRUCTION = (
 )
 
 
-def generate_answer(question: str, context_chunks: list, model: str = "gemma3:1b") -> str:
+def generate_answer(question: str, context_chunks: list, model: str = "gemma3:4b") -> str:
     pieces = []
     for c in context_chunks:
         meta = f"(PMID: {c.get('pmid','?')}, Journal: {c.get('journal','?')}, Chunk: {c.get('chunk',0)})"
@@ -24,7 +24,7 @@ def generate_answer(question: str, context_chunks: list, model: str = "gemma3:1b
         if total_chars + len(p) + 2 > max_chars:
             break
         context_pieces.append(p)
-        total_chars += len(p) + 2  # for \n\n
+        total_chars += len(p) + 2 
     context = "\n\n".join(context_pieces)
 
     prompt = f"{SYSTEM_INSTRUCTION}\n\nContext:\n{context}\n\nQuestion: {question}\nAnswer:"

@@ -4,7 +4,7 @@ import os
 import time
 from typing import List
 
-Entrez.email = "helbi72@gmail.com"
+Entrez.email = "****@gmail.com"
 
 # Adjustable constants
 DATA_DIR = "data"
@@ -62,7 +62,7 @@ def fetch_and_save(query: str, out_dir: str = DATA_DIR, retmax: int = RETMAX):
                 json.dump(rec, f, ensure_ascii=False, indent=2)
             print(f"[Added] Saved new paper: {pmid}.json")
             added_count += 1
-            time.sleep(SLEEP_TIME)  # respect NCBI rate limits
+            time.sleep(SLEEP_TIME)
         except Exception as e:
             print(f"[Error] Failed to fetch PMID {pmid}: {e}")
 

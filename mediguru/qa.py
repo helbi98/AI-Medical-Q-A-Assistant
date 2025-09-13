@@ -16,10 +16,10 @@ class LocalRAG:
     def __init__(self,
                  persist_dir: str = CHROMA_DIR,
                  collection_name: str = COLLECTION_NAME,
-                 model_name: str = "gemma3:1b"):
+                 model_name: str = "gemma3:4b"):
         self.persist_dir = persist_dir
 
-        # Basic existence check (folder with Chroma’s DB files)
+        # Check if folder with Chroma’s DB files exists
         if not os.path.exists(self.persist_dir):
             raise FileNotFoundError(
                 f"Chroma directory '{self.persist_dir}' not found. "
@@ -40,7 +40,7 @@ class LocalRAG:
         # LLM (Ollama)
         self.llm = Ollama(model=model_name)
 
-        # PromptTemplate + LLMChain (answers are grounded in retrieved context)
+        # PromptTemplate + LLMChain
         template = (
             "You are a careful medical research assistant. "
             "Answer ONLY using the provided context. "
